@@ -1,0 +1,44 @@
+.button{
+	border: double;
+	outline: none;
+	border-color: white;
+	color: #FFFF99;
+	background-color: #FF6E66;
+	padding: 5px 15px;
+	font-size: 1.5em;
+	align-content: center;
+	transition-duration: 0.3s;
+	margin-bottom: 50px;
+	margin-right:10px;
+}
+#facts{
+	display : flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.button:hover{
+	background-color:#FFFF99;
+	color :#FF6E66;
+	border-color:#FF6E66;
+}
+body{
+	background-color:#6A5ACD;
+	font-family: Lucidatypewriter, monospace;
+}
+#output{
+
+	width:600px;
+	height:200px;
+	border:double;
+	border-color: white;
+	color: white;
+	background-color: #660066;
+
+	margin-left: 27.75%;
+}
+h1{
+	text-align: center;
+	border-bottom: double;
+	color: white;
+}

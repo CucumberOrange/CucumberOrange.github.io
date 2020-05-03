@@ -1,0 +1,54 @@
+h1{
+	text-align: center;
+	color: #476bb2;
+	border-bottom: double;
+}
+body{
+	background-color: #FFFF99; 
+}
+#main{
+	width: 880px;
+	height: 485px;
+	background-color:#572675;
+	color: #476bb2;
+	border: double;
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+.thumb{
+	height:200px;
+	padding:20px;
+}
+#lightbox{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+#positionBigImage{
+	position:absolute;
+	top:20px;
+	left:0px;
+	width: 100%;
+}
+#x{
+	position: absolute;
+	top:0px;
+	right: 0px;
+}
+#boundaryBigImage{
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 517px;
+}
+.hidden{
+	display:none;
+}
+.unhidden{
+	display:block;
+}

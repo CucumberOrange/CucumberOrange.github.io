@@ -75,8 +75,8 @@ function continueGame(){
 	}
 }//continueGame
 
-let idNames = ["one","two","three","four","five","six","seven","eight","nine"];
-function newGame(){
+//let idNames = ["one","two","three","four","five","six","seven","eight","nine"];
+/*function newGame(){
 	for (var i = 0; i < idNames.length; i++) {
 		document.getElementById(idNames[i]).innerHTML = "";
 	}//for

@@ -8,26 +8,22 @@ function playerTakeTurn(e){
 		checkGameStatus();
 	}else{
 		showLightBox("This box is already selected."," Please try again.");
-		console.log("This box is already selected. Please try again.");
 		return;
 	}//ifElse
 
 	if(gameStatus!= ""){
 		showLightBox(gameStatus,"Game over!");
-		console.log("Game over!");
-	}
+	}//if
 }//player take turn
 
 function checkGameStatus(){
 	numTurns++;
 	if (checkWin()) {
 		gameStatus = currentPlayer + " wins!";
-		console.log("Game Status: " + gameStatus);
-	}
+	}//if
 	if(numTurns === 9){
 		gameStatus = "It's a tie!";
-		console.log("Game Status: " + gameStatus);
-	}
+	}//if
 	currentPlayer = (currentPlayer == "X"? "O":"X");
 }//checkGameStatus
 
@@ -46,9 +42,9 @@ function checkWin(){
 	if((cb[1] != "" && cb[1] == cb[2] && cb[2] == cb[3])|| (cb[4] != "" && cb[4] == cb[5] && cb[5] == cb[6])||
 		(cb[7] != "" && cb[7] == cb[8] && cb[8] == cb[9])||(cb[1] !="" && cb[1] == cb[4]&& cb[4] == cb[7])||
 		(cb[2] != "" && cb[2] == cb[5]&& cb[5] == cb[8])||(cb[3] !="" && cb[3] == cb[6]&& cb[6] == cb[9])||
-		(cb[1] != "" && cb[1] == cb[5] && cb[9])|| (cb[3] != "" && cb[3] == cb[5] && cb[7])){
+		(cb[1] != "" && cb[1] == cb[5] && cb[5] == cb[9])|| (cb[3] != "" && cb[3] == cb[5] && cb[5] == cb[7])){
 		return true;
-	}
+	}//if
 }//checkWin
 
 function changeVisibility(divID){
@@ -63,9 +59,9 @@ function showLightBox(message,message2){
 	document.getElementById("message2").innerHTML = message2;
 	changeVisibility("lightbox");
 	changeVisibility("boundaryMessage");
-}
+}//showLightBox
 
 function continueGame(){
-		changeVisibility("lightbox");
+	changeVisibility("lightbox");
 	changeVisibility("boundaryMessage");
-}
+}//continueGame

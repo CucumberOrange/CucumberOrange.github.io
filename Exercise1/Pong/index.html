@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>pong</title>
+  <link rel= "icon" type="image/png" href= "Favicon.png" sizes="16x16">
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="pong.css">  
+    
+    <!-- include an external JavaScript file -->
+  </head>
+  
+  <body>
+
+    <div id="controlPanel">
+      <div onclick="startGame()" id="start" class="controls">Start Game</div>
+      <div onclick="pauseGame()" id="pause" class="controls">Pause Game</div>
+      <div onclick="resumeGame()"  id="resume" class="controls">Resume Game</div>
+    </div>
+
+    <div id="header">
+      <h1 id="title">Pong</h1>
+      <h1 id="level">Level 1 - getting started</h1>
+      <h2 id="left">Player 1: <span id="score1">0</span></h2>
+      <h2 id="right">Player 2: <span id="score2">0</span></h2>
+     </div>
+     <div id="gameBoard">
+      <div id="paddle1" class="paddle"></div>
+      <div id="ball"></div>
+      <div id="ball2" class="visibilityhidden"></div>
+      <div id="paddle2" class="paddle"></div>
+      <div id = "lightbox" class="hidden"> </div>
+      <div id="positionMessage" class="hidden"> 
+        <div id="boundaryMessage" class = "hidden">
+          <img id="x" src="Images/x.png" class="hidden" alt="close" onclick="continueGame()">
+          <h1 class="titleText" id="message1">message 1</h1>
+          <p class="titleText" id="message2">message 2</p>
+          <button class="unhidden" id="continue">continue</button>
+          <button class="hidden" id="back">back</button>
+          <button class = "hidden" id="finish" onclick="continueGame()">Let's go!</button>
+          <button id = "startNewGame" class ="hidden" onclick="resetGame()">Restart</button>
+        </div>
+      </div>  
+</div>
+     <script src="pong.js"></script>
+  </body>
+</html>

@@ -53,7 +53,7 @@ var headingText = ["How to play","How to play","How to play","How to play", "Lev
 var instructionText = [ "Player 1, use the W key to move your paddle up, and the S key to move it down.", 
 	"Player 2, use the up arrow key to move your paddle up, and the down arrow key to move it down.",
 	"To begin, hit the start button","Remember, you can pause the game at any time.",
-	"Are you ready?", "Buckle up, it's going to be a bumpy ride!", "Last game; make it count!", "Player 2 lost", "Player 1 lost"];
+	"Are you ready?", "Buckle up, it's going to be a bumpy ride!", "Last game; make it count!", "Better luck next time, Player 2!", "Better luck next time, Player 1!"];
 var levelText = ["", "Level 1 - getting started", "Level 2 - picking up speed", "Level 3 - double trouble"];
 
 

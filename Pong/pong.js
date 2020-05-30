@@ -154,7 +154,7 @@ document.addEventListener('keyup', function(e){
 		speedOfPaddle2 = 0;
 	}
 });
-https://www.w3schools.com/graphics/game_sound.asp
+//https://www.w3schools.com/graphics/game_sound.asp
 function sound(src) {
   this.sound = document.createElement("audio");
   this.sound.src = src;

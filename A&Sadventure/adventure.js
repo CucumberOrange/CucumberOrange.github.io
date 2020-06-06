@@ -6,11 +6,17 @@ const level = [
 	"","water","","horseup","",
 	"","fenceside","","",""],
 	//level 1
-	["flag","water","","","","fence","water","","","rider","animate", 
-	"bridge animate", "animate","animate","animate","","water","","","",
+	["flag","water","","","",
+	"fence","water","","","rider",
+	"animate", "bridge animate", "animate","animate","animate",
+	"","water","","","",
 	"","water","horseup","",""],
-	["tree","tree","flag","tree","tree","animate","animate","animate",
-	"animate","animate", "water","bridge","water","water","water","","","","","rider","rock","","","horseup"]
+
+	["tree","tree","flag","tree","tree",
+	"animate","animate","animate","animate","animate",
+	 "water","bridge","water","water","water",
+	 "","","","","rider",
+	 "rock","","","horseup", ""]
 ];
 
 const obstacles = ["rock", "tree", "water"];
@@ -49,9 +55,7 @@ document.addEventListener("keydown", function(e){
 				tryToMove("down");
 			}
 			break;		
-	}
-			
-	
+	}//switch	
 });
 
 function tryToMove(direction){
@@ -144,8 +148,9 @@ function tryToMove(direction){
 	currentLocationOfHorse = nextLocation;
 	gridBoxes[currentLocationOfHorse].className = newClass;
 	//if the space is the enemy end game.
-	if (nextClass.includes("enemy")) {
+	if (nextClass.includes("enemy") || gridBoxes[oldLocation].className.includes("enemy")) {
 		document.getElementById("lose").style.display = "block";
+		clearTimeout(currentAnimation);
 		return;
 	}
 	//If there is a flag, move up a level.
@@ -153,30 +158,39 @@ function tryToMove(direction){
 }//tryToMove
 
 function levelUp(nextClass){
+	//alert("riderOn = " + riderOn);
 	if (nextClass == "flag" && riderOn){
+		riderOn = false;
 		document.getElementById("levelUp").style.display = "block";
 			clearTimeout(currentAnimation);
 			setTimeout(function(){
 			document.getElementById("levelUp").style.display = "none";
 			currentLevel++;
 			loadLevel();
+			if(currentLevel == 4){
+				document.getElementById("gameOver").style.display = "block";
+			}
 		}, 1000);
 	}//if
 }
 
 function loadLevel(){
+	//alert("loadLevel() is being called!");
 	let levelMap = level[currentLevel];
-
 	let animateBoxes;
 
 	//load board
 	for (var i = 0; i < gridBoxes.length; i++) {
 		gridBoxes[i].className = levelMap[i];
-		if (levelMap[i].includes("horse")) {currentLocationOfHorse = i;}
+		if (levelMap[i].includes("horse")) currentLocationOfHorse = i;
+		
 
 	}//for
 	animateBoxes = document.querySelectorAll(".animate");
 	animateEnemy(animateBoxes, 0, "right");
+
+
+
 }
 
 function animateEnemy(boxes,index, direction){

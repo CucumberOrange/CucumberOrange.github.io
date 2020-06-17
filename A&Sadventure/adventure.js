@@ -225,7 +225,7 @@ function levelUp(nextClass){
 			"This is the last level, and the hardest. Succeed or die trying!";
 			document.getElementById("levelUp").style.display = "block";
 			currentLevel--;
-		}{
+		}else{
 			currentLevel++;
 			document.getElementById("levelUp").innerHTML = 
 			"Brace yourself for level " + currentLevel + "!"; 
@@ -375,9 +375,9 @@ function animateArcher(boxes,index, direction){
 			return;
 		}
 	}else if (currentLevel == 3) {
-		if (currentLocationOfHorse == 22 && gridBoxes[22].className.includes("arrow") || 
-			(currentLocationOfHorse == 23 && gridBoxes[23].className.includes("arrow"))
-			|| (currentLocationOfHorse == 24 && gridBoxes[24].className.includes("arrow"))) {
+		if (currentLocationOfHorse == 16 && gridBoxes[16].className.includes("arrow") || 
+			(currentLocationOfHorse == 17 && gridBoxes[17].className.includes("arrow"))
+			|| (currentLocationOfHorse == 18 && gridBoxes[18].className.includes("arrow"))) {
 			thud.play();
 			lose.play();
 			lostLife++;
@@ -519,8 +519,11 @@ function setTimer(currentLevel){
 	}else if (currentLevel == 1) {
 		seconds = 15;
 		document.getElementById("seconds").innerHTML = seconds;
-	}else if (currentLevel <= 2) {
+	}else if (currentLevel == 2) {
 		seconds = 20;
+		document.getElementById("seconds").innerHTML = seconds;
+	}else if(currentLevel == 3){
+		seconds = 25;
 		document.getElementById("seconds").innerHTML = seconds;
 	}
 

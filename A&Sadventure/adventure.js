@@ -74,9 +74,9 @@ window.addEventListener("load", function(){
 
 
 document.addEventListener("keydown", function(e){
-	switch(e.keyCode){
-		
+
 	if(seconds != 0 && lostLife != 3){
+		switch(e.keyCode){
 			case 37:
 				if (currentLocationOfHorse % widthOfBoard !== 0) {
 					tryToMove("left");

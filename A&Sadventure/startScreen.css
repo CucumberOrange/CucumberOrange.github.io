@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+body{
+
+	background-color: #218521;
+	font-family: 'Metal Mania', cursive;
+}
+#end{
+	font-size: 50px;
+	text-align: center;
+	color: #003300;
+	
+
+}
+#replay{
+	 margin-left: auto;
+ 	 margin-right: auto;
+ 	 bottom: 20px;
+ 	 left: 600px;
+}
+
+
+h2{
+	text-align: center;
+}
+
+p{
+	font-size: 30px;
+	text-align: left;
+}
+#final{
+	height: 350px;
+	width: 622px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#instructions{
+	text-align: center;
+	border: double;
+	border-width: 10px;
+	border-color: #003300;
+	float: right;
+	right: 50px;
+	width: 50%;
+	height: 400px;
+}
+
+#welcome{
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto; 
+	align-content: center;
+	border: double;
+	border-width: 10px;
+	border-color: #003300;
+	right: 50px;
+	width: 50%;
+	height: 400px;
+}
+
+#image{
+	height: 415px;
+}
+
+#imageDiv{
+	float: left;
+}
+#horseHead{
+	width: 450px;
+	height: 890px;
+	float: left;
+	bottom: 100px;
+}
+
+#title{
+	height: 225px;
+	width: 750px;
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+button{
+	height:40px;
+	width:100px;
+	position: absolute;
+	font-size: 20px;
+	background-color: #003300;
+	color: white;
+	border-color: white;
+	font-family: 'Metal Mania', cursive;
+}
+
+
+#finish{
+	right: 50px;
+	position: absolute;
+	bottom: 10px;
+}
+
+#continueDiv{
+	position: absolute;
+	right: 200px;
+	bottom: 30px;
+}
+
+.hidden{
+	display: none;
+}
+
+.unhidden{
+	display: block;
+}
+

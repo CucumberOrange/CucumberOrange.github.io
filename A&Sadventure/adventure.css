@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 body{
 	background-color: black;
 }
 
+.tryAgain{
+	bottom: 20px;
+	right: 600px;
+}
 #gameBoard{
 	border: 1px solid black;
 	display: grid;
@@ -14,10 +19,27 @@ body{
 	margin-left: auto; 
 }
 
+#seconds{
+	color: white;
+	font-size: 30px;
+	width: 600px;
+	height: 20px;
+		font-family: 'Metal Mania', cursive;
+}
 #gameBoard div{
 	background-color: #002e00;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.life{
+	color: red;
+	text-align: right;
+	right: 250px;
+	font-size: 40px;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto; 
+	height: 20px;
 }
 .rider{
 	background-image: url("images/rider.png");
@@ -79,20 +101,33 @@ body{
 .jumpleft{
 	background-image: url("images/jumpleft.png");
 }
-.enemyUp{
+.enemyup{
 	background-image: url("images/enemyup.png");
 }
-.enemyDown{
+.enemydown{
 	background-image: url("images/enemydown.png");
 }
-.enemyRight{
+.enemyright{
 	background-image: url("images/enemyright.png");
 }
-.enemyLeft{
+.enemyleft{
 	background-image: url("images/enemyleft.png");
 }
+
 .bridge{
 	background-color: #800020 !important;
+}
+.archer{
+	background-image: url("images/archer.png");
+}
+.arrow{
+	background-image: url("images/arrow.png");
+}
+.wall{
+	background-image: url("images/wall.png");
+}
+.wallside{
+	background-image: url("images/wallside.png");
 }
 .message{
 	display: none;
@@ -103,9 +138,35 @@ body{
 	height: 100%;
 	background-color: rgba(0,0,0,0.8);
 	color: white;
-	font-family: Verdana, sans-serif;
-	font-size: 8em;
+	font-family: 'Metal Mania', cursive;
+	font-size: 4.5em;
 	vertical-align: top;
 	text-align: center;
 	line-height: 100vh;
+}
+
+button{
+	height:40px;
+	width:100px;
+	position: absolute;
+	font-size: 10px;
+	background-color: #003300;
+	color: white;
+	border-color: white;
+	font-family: 'Metal Mania', cursive;
+}
+
+#pause{
+	right: 600px;
+	top: 90px;
+}
+#resume{
+	right: 700px;
+	top: 90px;
+}
+
+#timer{
+	font-size: 30px;
+	color: white;
+		font-family: 'Metal Mania', cursive;
 }

@@ -5,11 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="adventure.css">
 </head>
 <body>
-	
-	<div><p class="life"><span id="timer">Timer: </span><span id="seconds">10</span>&nbsp;
-		<span id="live1" class="unhidden">&#9829;</span>&nbsp;
-		<span id="live2" class="unhidden">&#9829;</span>&nbsp;
-		<span id="live3" class="unhidden">&#9829;</span></p></div>
 	<div id="gameBoard">
 		<div></div>
 		<div></div>
@@ -41,9 +36,10 @@
 		<div></div>
 		<div></div>
 	</div>
-	<div class="message" id="levelUp">You passed level 1!</div>
-	<div class="message" id="gameOver">Game Over!<button class="tryAgain" onclick="replay()"> Try again</button></div>
-	<div class="message" id="outoftime">Out of time! <button class="tryAgain" onclick="replay()"> Try again</button></div>
+
+	<div class="message" id="lose">You lose</div>
+	<div class="message" id="levelUp">Next level...</div>
+	<div class = "message" id="gameOver">Game Over!</div>
 	<script src="adventure.js"></script>
 </body>
 </html>

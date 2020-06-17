@@ -27,7 +27,7 @@ const level = [
 
 
 
-const obstacles = ["rock", "tree", "water","wall","wallside","archer"];
+const obstacles = ["rock", "tree", "water","wall","wallside","archer","archer bridge"];
 
 const gridBoxes = document.querySelectorAll("#gameBoard div");
 var currentLevel = 0;

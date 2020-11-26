@@ -1,0 +1,65 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body {
+  /* Define the custom font for the whole document */
+font-family: 'Lato', sans-serif;
+  background-color: #1f3c88;
+}
+
+h1{
+  color: #ee6f57;
+  font-size: 45px;
+}
+/* Added top padding */
+.introduction {
+  padding-top: 4rem;
+  color: #f6f5f5;
+  font-size: 25px;
+}
+
+/* Added top padding */
+.projects {
+  padding-top: 2rem;
+  color: #f6f5f5;
+  font-size: 25px;
+}
+
+/* Display block for all anchor tags */
+/* Added a color to links */
+.projects a {
+    color: #f6f5f5;
+  display: block;
+   font-size: 25px;
+}
+
+/* On hover change color and text-decoration */
+
+/* Added top padding */
+.youtube {
+  padding-top: 2rem;
+}
+
+/* Added top padding */
+.questions {
+  padding-top: 2rem;
+  color: #f6f5f5;
+  font-size: 25px;
+
+}
+
+/* Change color of h2 tags that are inside the questions class */
+.questions h2 {
+   
+      color: #ee6f57;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  /* Gives h2 tags a smaller font size than default */
+  h2 {
+    font-size: 1.5rem;
+  }
+}

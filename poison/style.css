@@ -48,8 +48,13 @@ div{
 .topnav{
 	background-color: white;
 	font-size: 36px;
-	margin-right: 100px;
+	transition-duration: 0.3s;
+	
 }
+.topnav:hover{
+	color: white;
+}
+
 
 
 img {

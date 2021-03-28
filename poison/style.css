@@ -71,13 +71,15 @@ img {
 
 .leftpic{
 	float: left;
-	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
 }
 
 .rightpic{
 	float: right;
 	margin-left: 15px;
-}
+		margin-bottom: 15px;
+}	
 
 
 

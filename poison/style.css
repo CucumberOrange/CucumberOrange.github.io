@@ -43,15 +43,16 @@ div{
 .all{
 	color: #4a5a77;
 	text-decoration: none;
+	transition-duration: 0.3s;
+	
 }
 
 .topnav{
 	background-color: white;
 	font-size: 36px;
-	transition-duration: 0.3s;
 	
 }
-.topnav:hover{
+.all:hover{
 	color: white;
 }
 
